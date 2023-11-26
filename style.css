@@ -1,0 +1,165 @@
+body {
+  font-family: "Arial", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #004274;
+  padding: 15px 0px;
+
+  max-width: 100%;
+
+  margin: 0;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #004274;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.hero-section {
+  background-image: url("./images/hero-banner.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  height: 500px;
+  width: 100%;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+
+  height: 500px;
+  width: 100%;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px #fff;
+}
+
+.about-us {
+  background-image: url("./images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 400px;
+  height: 100%;
+  width: 100%;
+}
+.overlay-about {
+  background-color: rgba(255, 255, 255, 0.85);
+  min-height: 400px;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  #about {
+    min-height: 500px;
+  }
+  .overlay-about {
+    min-height: 500px;
+  }
+  .about-us {
+    min-height: 500px;
+  }
+}
+@media (max-width: 500px) {
+  #about {
+    min-height: 600px;
+  }
+  .overlay-about {
+    min-height: 600px;
+  }
+  .about-us {
+    min-height: 600px;
+  }
+}
+@media (max-width: 400px) {
+  #about {
+    min-height: 700px;
+  }
+  .overlay-about {
+    min-height: 700px;
+  }
+  .about-us {
+    min-height: 700px;
+  }
+}
+@media (max-width: 350px) {
+  .overlay-about {
+    min-height: 750px;
+  }
+  .about-us {
+    min-height: 750px;
+  }
+}
+@media (max-width: 330px) {
+  .overlay-about {
+    min-height: 800px;
+  }
+  .about-us {
+    min-height: 800px;
+  }
+}
+@media (max-width: 300px) {
+  .overlay-about {
+    min-height: 850px;
+  }
+  .about-us {
+    min-height: 850px;
+  }
+}
